@@ -1,0 +1,191 @@
+urls:
+- url: https://help.uber.com/en-AU/ubereats/restaurants/article/ordering-pickup-at-venues?nodeId=13e8933a-fe57-444e-8db8-cf937964ce0f
+  title: Ordering Pickup at Venues
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/en-AU/ubereats/restaurants/article/what-is-the-uber-eats-cancellation-policy-?nodeId=78c4c326-15ba-4d6a-9fd2-d8724f525477
+  title: Uber Eats Cancellation Policy
+  role: customer
+  category: order_change_cancel
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/i-think-i-was-charged-more-than-once?nodeId=bfcb83ac-4def-4f64-bf5f-3ed0bd90ee31
+  title: Duplicate or Extra Charges
+  role: customer
+  category: payments_refunds
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/report-a-safety-incident-involving-a-delivery-partner%E3%80%80?nodeId=6586bcec-005f-4b7c-8a75-50fff88536f4
+  title: Report a Safety Incident Involving a Delivery Partner
+  role: customer
+  category: delivery_issues
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/i-have-feedback-about-voiceover-or-talkback-features?nodeId=d5fe67ba-32d0-45c8-ba57-929fd356a290
+  title: Feedback About VoiceOver or TalkBack Features
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/i-was-charged-for-cancellation?nodeId=6838771b-be6a-452e-a82c-9230679120bd
+  title: Charged for a Cancelled Order
+  role: customer
+  category: order_change_cancel
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/wrong-or-missing-items?nodeId=beb06041-6d9c-44de-9ecf-2a9fa80c3bc9
+  title: Wrong or Missing Items
+  role: customer
+  category: delivery_issues
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/brand-partnership-special-event-promo-codes?nodeId=69b7a231-34a6-4f6c-b473-b2dc214e1b28
+  title: Brand Partnership / Special Event Promo Codes
+  role: partner
+  category: promotions
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/authorization-holds---faq-?nodeId=2abc10e9-7c91-46e5-afb0-39ee3b463ff9
+  title: Authorization Holds - FAQ
+  role: customer
+  category: payments_refunds
+  jurisdiction: AU
+- url: https://help.uber.com/en-GB/ubereats/restaurants/article/gift-deliveries---faq?nodeId=99ae52b0-0712-45bd-a78b-0650f3fe4f25
+  title: Gift Deliveries – FAQ
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/accessibility-how-to-use-talkback?nodeId=58e9c395-d32d-478f-a566-4bbe73aeb690
+  title: Accessibility – How to Use TalkBack
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/en-AU/ubereats/restaurants/article/when-and-where-is-uber-eats-available-?nodeId=3f8de61e-09dd-4844-afb2-749c9ffc65a8
+  title: When and Where Is Uber Eats Available?
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/how-do-uber-credits-work?nodeId=de1d0166-f658-48eb-9033-e87325db7ac7
+  title: How Do Uber Credits Work?
+  role: customer
+  category: payments_refunds
+  jurisdiction: AU
+- url: https://help.uber.com/en-AU/ubereats/restaurants/article/how-do-i-order-uber-eats----?nodeId=509d1b2f-087c-4dac-9e94-6ab248e87491
+  title: How to Place an Order on Uber Eats
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://www.uber.com/legal/en/document/?name=general-community-guidelines&country=australia&lang=en
+  title: Uber Community Guidelines (Australia & New Zealand)
+  role: all_users
+  category: policies_guidelines
+  jurisdiction: '[''AU'', ''NZ'']'
+- url: https://help.uber.com/ubereats/restaurants/article/i-had-a-food-safety-issue-with-my-order?nodeId=c9210825-ef20-4b63-8678-930a9dd36d16
+  title: Food Safety Issue With My Order
+  role: customer
+  category: delivery_issues
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/how-to-place-a-business-group-order?nodeId=522c8627-132d-4872-958f-564d2e20b824
+  title: How to Place a Business Group Order
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/en-AU/ubereats/restaurants/article/can-i-order-multiple-meals-or-from-multiple-restaurants-in-the-same-order?nodeId=c91bfe9b-a6e7-4478-a317-37de51499bb8
+  title: Can I Order Multiple Meals, or From Multiple Restaurants, in the Same Order?
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/order-never-arrived?nodeId=23e258f9-8040-49f1-a74f-0fdf9fef6cba
+  title: Order Never Arrived
+  role: customer
+  category: delivery_issues
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/i-want-to-report-a-property-damage-incident?nodeId=07531584-f8f1-4890-ae0d-72c59cf5e5a5
+  title: Report a Property Damage Incident
+  role: customer
+  category: delivery_issues
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/my-order-is-wrong-?nodeId=93fe8ec6-1f78-4279-a574-177d122fda26
+  title: My Order Is Wrong
+  role: customer
+  category: delivery_issues
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/how-to-use-referral-codes-and-notes?nodeId=69b7a231-34a6-4f6c-b473-b2dc214e1b28
+  title: How to Use Referral Codes and Notes
+  role: customer
+  category: payments_refunds
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/how-to-place-a-group-order-?nodeId=886fdace-3cee-4658-9d3c-7cadfbec5280
+  title: How to Place a Group Order
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/my-uber-pass-discount-or-promotion-didnt-apply?nodeId=26761f4a-d55d-4d90-a31e-83e8b273ba52
+  title: Uber Pass Discount or Promotion Didn’t Apply
+  role: customer
+  category: promos_fees
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/how-to-create-a-meal-plan?nodeId=624a50fd-1a61-4c54-ae0e-b1f2c19c1c8a
+  title: How to Create a Meal Plan
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/pick-up-order-faq?nodeId=de1d0166-f658-48eb-9033-e87325db7ac7
+  title: Pick-up Order FAQ
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/repeat-group-orders-faq?nodeId=2e6ae215-d151-483a-b8c7-dd7f7485f3c8
+  title: Repeat Group Orders – FAQ
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/promo-code-didnt-apply?nodeId=5a505561-1164-4d5c-a0e8-75ed1ad47c72
+  title: Promo Code Didn’t Apply
+  role: customer
+  category: promos_fees
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/am-i-expected-to-leave-a-tip?nodeId=8eeb5c32-9790-432f-9a0f-5d5c0cf47824
+  title: Am I Expected to Leave a Tip?
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/allergen-list?nodeId=0552e617-5b9c-4efd-bba1-ab4dea3eaf32
+  title: Allergen List
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/allergy-requests-faq?nodeId=7e03d583-d515-42b7-999c-d560be01dffc
+  title: Allergy Requests – FAQ
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/en/ubereats/restaurants/article/how-can-i-reorder-food-that-ive-ordered-before?nodeId=012e1e38-acdf-4022-989c-4d3921999e21
+  title: How Can I Reorder Food I’ve Ordered Before?
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/food-damage-or-quality-issue?nodeId=7473cb7f-674b-43b4-88bd-98082ea9d37e
+  title: Food Damage or Quality Issue
+  role: customer
+  category: delivery_issues
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/missing-utensils-or-condiments?nodeId=b348c8b0-31a6-486d-8570-f5a2e1233ab2
+  title: Missing Utensils or Condiments
+  role: customer
+  category: delivery_issues
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/i-had-an-issue-with-my-delivery-person?nodeId=a5ed47f3-7aa8-426f-ac11-51ae9769ebf8
+  title: Issue With My Delivery Person
+  role: customer
+  category: delivery_issues
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/can-i-order-food-for-a-set-time?nodeId=a32c4890-a6b8-427d-84e9-786ddbb29b18
+  title: Can I Order Food for a Set Time?
+  role: customer
+  category: placing_orders
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/where-should-i-meet-my-delivery-person?nodeId=8c9a6cc6-5fda-4e5c-8171-7e1994e1efcf
+  title: Where Should I Meet My Delivery Person?
+  role: customer
+  category: delivery_issues
+  jurisdiction: AU
+- url: https://help.uber.com/ubereats/restaurants/article/how-to-add-a-tip?nodeId=5867f9dd-7ca5-4484-af59-6c222d9a8355
+  title: How to Add a Tip
+  role: customer
+  category: placing_orders
+  jurisdiction: AU

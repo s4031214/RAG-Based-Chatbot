@@ -1,0 +1,2 @@
+ts,question,model,top_k,context_k,latency,helpful,citations,urls
+1758455819.067093,how to order food in uber app,llama3.1:8b,8,4,16.241541862487793,1,customer-how-to-order-au-v1--0,https://help.uber.com/en-AU/ubereats/restaurants/article/how-do-i-order-uber-eats----?nodeId=509d1b2f-087c-4dac-9e94-6ab248e87491

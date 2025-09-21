@@ -1,0 +1,11 @@
+model,role,intent,n,UA%,Acc@Gold%,Recall@8%,AttributionAny%,AttrOverlap(Jaccard),Hallucination%,Latency_p50_s,Latency_p95_s
+llama3.1:8b,courier,courier_pay_flow,1.0,100.0,100.0,0.0,0.0,0.0,0.0,10.747189998626709,10.747189998626709
+llama3.1:8b,customer,change_delivery_address,1.0,0.0,0.0,0.0,0.0,0.0,100.0,10.360620975494385,10.360620975494385
+llama3.1:8b,customer,lost_items,1.0,0.0,0.0,0.0,0.0,0.0,100.0,8.110174894332886,8.110174894332886
+llama3.1:8b,customer,refunds_charges,1.0,0.0,0.0,0.0,0.0,0.0,100.0,11.866161823272705,11.866161823272705
+llama3.1:8b,merchant,merchant_onboarding,1.0,0.0,0.0,0.0,0.0,0.0,100.0,11.358928918838501,11.358928918838501
+mistral:7b,courier,courier_pay_flow,1.0,0.0,0.0,0.0,0.0,0.0,100.0,13.55337119102478,13.55337119102478
+mistral:7b,customer,change_delivery_address,1.0,0.0,0.0,0.0,0.0,0.0,100.0,7.863458156585693,7.863458156585693
+mistral:7b,customer,lost_items,1.0,0.0,0.0,0.0,0.0,0.0,100.0,9.905709981918335,9.905709981918335
+mistral:7b,customer,refunds_charges,1.0,0.0,0.0,0.0,0.0,0.0,100.0,17.091607093811035,17.091607093811035
+mistral:7b,merchant,merchant_onboarding,1.0,0.0,0.0,0.0,0.0,0.0,100.0,15.283949851989746,15.283949851989746
