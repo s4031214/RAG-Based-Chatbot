@@ -109,7 +109,7 @@ def record_feedback(row: dict):
 
 # ---- UI ----
 st.set_page_config(page_title="RAG UberEats Support (Demo)", layout="wide")
-st.title("🍔 RAG Support Bot — UberEats-style (Demo)")
+st.title("🍔 UberEats RAG Based Chatbot(Demo)")
 
 meta, rows, index, embedder = load_artifacts()
 
