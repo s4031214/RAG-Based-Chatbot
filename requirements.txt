@@ -26,3 +26,9 @@ streamlit
 
 # Optional: charts/plots (if you want visualizations in Streamlit or reports)
 matplotlib
+
+
+streamlit
+httpx
+openai>=1.0.0
+ollama 
