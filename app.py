@@ -6,6 +6,10 @@ import faiss
 from sentence_transformers import SentenceTransformer
 import ollama
 import regex as re
+import ollama
+import httpx
+from openai import OpenAI
+
 
 # ---- Paths ----
 ROOT = os.path.dirname(__file__)
