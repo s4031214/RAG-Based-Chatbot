@@ -1,28 +1,28 @@
 # Core
-numpy==1.26.4
-pandas==2.2.2
+numpy
+pandas
 
 # Document processing
-beautifulsoup4==4.12.3
-markdownify==0.11.6
-requests==2.32.3
-pdfminer.six==20221105
-python-slugify==8.0.4
-python-frontmatter==1.0.1
-tqdm==4.66.5
-pyyaml==6.0.2
-regex==2024.9.11
+beautifulsoup4
+markdownify
+requests
+pdfminer.six
+python-slugify
+python-frontmatter
+tqdm
+pyyaml
+regex
 
 # Embeddings & retrieval
-sentence-transformers==2.7.0
-faiss-cpu==1.8.0.post1
-rapidfuzz==3.9.6
+sentence-transformers
+faiss-cpu
+rapidfuzz
 
 # LLM interface
-ollama==0.3.2
+ollama
 
 # App
-streamlit==1.37.1
+streamlit
 
 # Optional: charts/plots (if you want visualizations in Streamlit or reports)
-matplotlib==3.9.2
+matplotlib
