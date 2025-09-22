@@ -105,49 +105,39 @@ if os.getenv("OLLAMA_BASE_URL") and not os.getenv("OLLAMA_HOST"):
     os.environ["OLLAMA_HOST"] = os.getenv("OLLAMA_BASE_URL")
 
 def _ollama_up() -> bool:
-    """Quick health check: is the Ollama endpoint reachable?"""
-    base = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+    base = _ollama_base()
     try:
-        r = httpx.get(f"{base}/api/tags", timeout=3)
-        return r.status_code == 200
+        r = httpx.get(f"{base}/api/tags", timeout=5)
+        r.raise_for_status()
+        return True
     except Exception:
         return False
+
+def _ollama_up() -> bool:
+    base = _ollama_base()
+    try:
+        r = httpx.get(f"{base}/api/tags", timeout=5)
+        r.raise_for_status()
+        return True
+    except Exception:
+        return False
+
 
 def call_llm(model_name, question, context):
     messages = [
         {"role": "system", "content": SYSTEM_INSTRUCTIONS},
         {"role": "user", "content": USER_TEMPLATE.format(question=question, context=context)},
     ]
-
-    # 1) Prefer Ollama if an endpoint is reachable (local dev or remote VM)
-    if _ollama_up():
-        try:
-            resp = ollama.chat(
-                model=model_name,
-                messages=messages,
-                options={"temperature": 0.2, "num_ctx": 8192},
-            )
-            return resp["message"]["content"].strip()
-        except Exception:
-            # fall through to hosted LLM if something goes wrong
-            pass
-
-    # 2) Fallback to OpenAI (hosted) for Streamlit Cloud
-    if OPENAI_API_KEY:
-        client = OpenAI(api_key=OPENAI_API_KEY)
-        resp = client.chat.completions.create(
-            model=OPENAI_MODEL,
-            messages=messages,
-            temperature=0.2,
-        )
-        return resp.choices[0].message.content.strip()
-
-    # 3) Neither backend available: raise a clear message
-    raise RuntimeError(
-        "No LLM backend configured. On Streamlit Cloud, either:\n"
-        "- Set OPENAI_API_KEY (recommended), or\n"
-        "- Run Ollama on a remote VM and set OLLAMA_HOST/OLLAMA_BASE_URL."
+    if not _ollama_up():
+        raise RuntimeError(f"Ollama not reachable at '{_ollama_base()}'. Set OLLAMA_HOST in Secrets and ensure it’s public.")
+    resp = ollama.chat(
+        model=model_name,
+        messages=messages,
+        options={"temperature": 0.2, "num_ctx": 8192},
     )
+    return resp["message"]["content"].strip()
+
+
 
 def extract_citations(answer: str):
     return sorted(set(CIT_RE.findall(answer)))
