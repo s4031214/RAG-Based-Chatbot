@@ -8,7 +8,6 @@ import ollama
 import regex as re
 import ollama
 import httpx
-from openai import OpenAI
 
 
 # ---- Paths ----
