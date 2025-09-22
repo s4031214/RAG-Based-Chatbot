@@ -40,6 +40,18 @@ Prefer AU details when present. Always include citations in [chunk_id] form and 
 
 CIT_RE = re.compile(r"\[([A-Za-z0-9._:-]+--\d+)\]")
 
+# --- Config helpers ---
+def _get_secret(name: str, default: str | None = None):
+    # Try env var first (works locally), then Streamlit Secrets (works on Cloud)
+    return os.getenv(name) or st.secrets.get(name, default)
+
+def _ollama_base() -> str:
+    return (_get_secret("OLLAMA_HOST") or _get_secret("OLLAMA_BASE_URL") or "http://localhost:11434").rstrip("/")
+
+# Set the env var so the `ollama` python client also points to your remote host
+_base = _ollama_base()
+os.environ["OLLAMA_HOST"] = _base
+
 # ---- Helpers ----
 @st.cache_resource
 def load_artifacts():
@@ -88,9 +100,6 @@ def format_context(hits, context_k, limit_chars=5500):
         blocks.append(block)
         total += len(block)
     return "\n\n---\n\n".join(blocks), used
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")           # set in Streamlit Secrets
-OPENAI_MODEL   = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 
 if os.getenv("OLLAMA_BASE_URL") and not os.getenv("OLLAMA_HOST"):
     os.environ["OLLAMA_HOST"] = os.getenv("OLLAMA_BASE_URL")
