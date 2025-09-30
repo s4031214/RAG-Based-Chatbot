@@ -1,2 +1,3 @@
 ts,question,model,top_k,context_k,latency,helpful,citations,urls
 1758455819.067093,how to order food in uber app,llama3.1:8b,8,4,16.241541862487793,1,customer-how-to-order-au-v1--0,https://help.uber.com/en-AU/ubereats/restaurants/article/how-do-i-order-uber-eats----?nodeId=509d1b2f-087c-4dac-9e94-6ab248e87491
+1758509118.379955,how to cancel my order,llama3.1:8b,8,4,31.03552269935608,1,customer-order-cancellation-au-v1--1,https://help.uber.com/en-AU/ubereats/restaurants/article/what-is-the-uber-eats-cancellation-policy-?nodeId=78c4c326-15ba-4d6a-9fd2-d8724f525477
