@@ -19,6 +19,11 @@ CHUNK_META_PATH = os.path.join(IDXDIR, "chunks_meta.jsonl")
 FEEDBACK_PATH = os.path.join(ROOT, "data", "eval", "feedback.csv")
 os.makedirs(os.path.dirname(FEEDBACK_PATH), exist_ok=True)
 
+OLLAMA_HOST  = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3.2:1b")
+
+client = ollama.Client(host=OLLAMA_HOST)
+
 # ---- Prompt & parsing ----
 SYSTEM_INSTRUCTIONS = """You are a careful support assistant for a food delivery platform in Australia.
 Answer ONLY using the provided context snippets.
@@ -122,15 +127,14 @@ def _ollama_up() -> bool:
         return False
 
 
-def call_llm(model_name, question, context):
+def call_llm(question, context):
     messages = [
         {"role": "system", "content": SYSTEM_INSTRUCTIONS},
         {"role": "user", "content": USER_TEMPLATE.format(question=question, context=context)},
     ]
-    if not _ollama_up():
-        raise RuntimeError(f"Ollama not reachable at '{_ollama_base()}'. Set OLLAMA_HOST in Secrets and ensure it’s public.")
-    resp = ollama.chat(
-        model=model_name,
+    # Directly use the client (no need for _ollama_up() if host is correct)
+    resp = client.chat(
+        model=OLLAMA_MODEL,
         messages=messages,
         options={"temperature": 0.2, "num_ctx": 8192},
     )
